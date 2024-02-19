@@ -62,7 +62,7 @@ export function singleSpaAngular<T>(userOptions: SingleSpaAngularOptions<T>): Li
 
 async function bootstrap(options: BootstrappedSingleSpaAngularOptions, props: any): Promise<void> {
   const instance: Instance = {
-    bootstrappedNgModuleRefOrAppRef: null,
+    bootstrappedNgModuleRefOrAppRef: null
   };
   options.instances[props.name || props.appName] = instance;
 
